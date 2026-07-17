@@ -16,7 +16,7 @@ import {
   SearchOutlined,
   SettingsOutlined,
 } from "@mui/icons-material";
-import { ToggledContext } from "../../../App";
+{/*import { ToggledContext } from "../../../App";*/}
 const Navbar = () => {
   const theme = useTheme();
   const colorMode = useContext(ColorModeContext);
