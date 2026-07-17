@@ -1,61 +1,9 @@
 import React from "react";
+import "./theme.css";
 
 export default function SignalWelcome() {
   return (
     <div className="min-h-screen w-full bg-[#0A0C10] text-[#ECEAE2] antialiased overflow-x-hidden">
-      <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
-
-        .font-display { font-family: 'Space Grotesk', sans-serif; }
-        .font-body { font-family: 'Inter', sans-serif; }
-        .font-mono { font-family: 'JetBrains Mono', monospace; }
-
-        @keyframes scan {
-          0% { stroke-dashoffset: 240; }
-          100% { stroke-dashoffset: 0; }
-        }
-        @keyframes travel-top {
-          from { offset-distance: 0%; }
-          to { offset-distance: 100%; }
-        }
-        @keyframes travel-mid {
-          from { offset-distance: 0%; }
-          to { offset-distance: 100%; }
-        }
-        @keyframes travel-bottom {
-          from { offset-distance: 0%; }
-          to { offset-distance: 100%; }
-        }
-        @keyframes pulse-dot {
-          0%, 100% { opacity: 0.4; transform: scale(1); }
-          50% { opacity: 1; transform: scale(1.3); }
-        }
-
-        .signal-line {
-          stroke-dasharray: 12 8;
-          animation: scan 3.2s linear infinite;
-        }
-        .dot-top {
-          offset-path: path('M200,160 C260,160 300,60 452,60');
-          animation: travel-top 2.6s ease-in-out infinite;
-        }
-        .dot-mid {
-          offset-path: path('M200,160 L452,160');
-          animation: travel-mid 2.6s ease-in-out infinite 0.3s;
-        }
-        .dot-bottom {
-          offset-path: path('M200,160 C260,160 300,260 452,260');
-          animation: travel-bottom 2.6s ease-in-out infinite 0.6s;
-        }
-        .live-dot { animation: pulse-dot 2s ease-in-out infinite; }
-
-        @media (prefers-reduced-motion: reduce) {
-          .signal-line, .dot-top, .dot-mid, .dot-bottom, .live-dot {
-            animation: none !important;
-          }
-        }
-      `}</style>
-
       {/* Header */}
       <header className="relative z-10 flex items-center justify-between px-6 sm:px-10 py-6 max-w-7xl mx-auto">
         <div className="flex items-center gap-2.5">
