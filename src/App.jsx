@@ -1,5 +1,6 @@
 import React from "react";
 import "./theme.css";
+import "./index.css";
 
 export default function SignalWelcome() {
   return (
